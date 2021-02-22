@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Repository {
 
-    public String getSong(){
-        return "I'm from Repository";
+    public String getMessage(){
+        return "Hello! I'm from Repository.";
     }
 }

@@ -21,12 +21,11 @@ public class Controller {
     @GetMapping(value = "/info")
     public List<Song> getSong(){
         var list = songRepository.findAll();
-        System.out.println("list = " + list);
         return list;
     }
 
     @GetMapping(value = "/hello")
     public String getMessage(){
-        return "Hi, I'm from Rest Controller.";
+        return repository.getMessage();
     }
 }
